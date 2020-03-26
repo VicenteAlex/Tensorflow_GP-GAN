@@ -52,11 +52,11 @@ _'DataBase/TransientAttributes/imageAlignedLD'_ and use the default paths )
   _Notice that resuming training from a checkpoint that's older
    than the last logged value in tensorboard can result in a graph that goes back and forward again._
  
- ![](DataBase\example_results\tensorboard.png)
+ ![](DataBase/example_results/tensorboard.png)
 
  Under images you will find image samples from the training process: 
 
- ![](DataBase\example_results\composed_real.png) ![](DataBase\example_results\generated.png)
+ ![](DataBase/example_results/composed_real.png) ![](DataBase/example_results/generated.png)
 ### Blending images with GP-GAN
 
 After training the GAN, we can load the weights and blend images. The supported input is a source image, a destination image and a binary mask.
@@ -68,4 +68,4 @@ python run_gp_gan.py --src_image images/test_images/src.jpg --dst_image images/t
 
 | Source | Destination | Mask | Composited | Blended |
 | --- | --- | --- | --- | --- |
-| ![](DataBase\test_images\src.jpg) | ![](DataBase\test_images\dst.jpg) | ![](DataBase\test_images\mask_display.png) | ![](DataBase\test_images\copy-paste.png) | ![](DataBase\test_images\result.jpg) |
+| ![](DataBase/test_images/src.jpg) | ![](DataBase/test_images/dst.jpg) | ![](DataBase/test_images/mask_display.png) | ![](DataBase/test_images/copy-paste.png) | ![](DataBase/test_images/result.jpg) |
