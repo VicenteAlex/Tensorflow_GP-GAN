@@ -211,7 +211,7 @@ def main():
                 Diters = args.d_iters
 
             for _ in range(Diters):
-                # clamp parameters to a cube
+                # enforce Lipschitz constraint
                 sess.run(clip_discriminator_var_op)
 
                 _, disc_train_loss = sess.run([optimizer_disc, disc_loss])

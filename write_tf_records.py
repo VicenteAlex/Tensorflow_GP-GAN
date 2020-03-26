@@ -85,7 +85,6 @@ def _crop(im, rw, rh, sx, sy, crop_size):
 
     im = cv2.resize(im, (rw, rh), interpolation=cv2.INTER_AREA)
     im = im[sy:sy + crop_size, sx:sx + crop_size, :]
-    #im = np.transpose(im, (2, 0, 1)).astype(np.float32)
 
     return im
 
