@@ -5,14 +5,14 @@ Tensorflow implementation of [GP-GAN: Towards Realistic High-Resolution Image Bl
 
 _Currently, only the supervised learning approach is implemented_
 
-##Installation
+### Installation
 
 Code tested in python 3.6.0 and Tensorflow 1.15.0.
 
 Install the requirements with:\
 `pip install -r requirements.txt`
 
-##Train GP-GAN
+### Train GP-GAN
 (To skip writing data paths in the following steps, place the downloaded Transient Attributes Dataset under 
 _'DataBase/TransientAttributes/imageAlignedLD'_ and use the default paths )
 
@@ -31,7 +31,7 @@ _'DataBase/TransientAttributes/imageAlignedLD'_ and use the default paths )
     ```
     To resume training from a checkpoint use the flag `--weights_path "path to .ckpt"`
 
- ######Checking your training with TensorBoard:
+ ###### Checking your training with TensorBoard:
  
  Run TensorBoard:
  ```
@@ -57,7 +57,7 @@ _'DataBase/TransientAttributes/imageAlignedLD'_ and use the default paths )
  Under images you will find image samples from the training process: 
 
  ![](DataBase\example_results\composed_real.png) ![](DataBase\example_results\generated.png)
-##Blending images with GP-GAN
+### Blending images with GP-GAN
 
 After training the GAN, we can load the weights and blend images. The supported input is a source image, a destination image and a binary mask.
 
